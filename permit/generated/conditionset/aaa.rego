@@ -19,3 +19,7 @@ userset_aaa_any_of_0 {
 userset_aaa_any_of_0 {
 	attributes.user.roles == "admin"
 }
+
+userset_aaa_any_of_0 {
+	attributes.user.key == "1234"
+}
