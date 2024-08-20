@@ -154,8 +154,6 @@ remove_built_in_roles(roles) := filtered_roles {
 default __rebac_roles := {}
 
 
-__rebac_roles := permit_rebac.all_roles(input)
-
 
 default permissions := {}
 
