@@ -17,7 +17,7 @@ userset_gadfgfd_any_of_0 {
 }
 
 userset_gadfgfd_any_of_0 {
-	"admin" in attributes.user.roles
+	attributes.user.roles == attributes.user.friends
 }
 
 userset_gadfgfd_any_of_0 {
