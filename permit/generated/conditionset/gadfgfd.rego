@@ -23,3 +23,11 @@ userset_gadfgfd_any_of_0 {
 userset_gadfgfd_any_of_0 {
 	count(attributes.user.roles) == 2
 }
+
+userset_gadfgfd_any_of_0 {
+	count({x | some x in attributes.user.roles} - {x | some x in attributes.user.roleAssignments}) == 0
+}
+
+userset_gadfgfd_any_of_0 {
+	count({x | some x in attributes.user.roleAssignments} - {x | some x in attributes.user.roles}) == 0
+}
