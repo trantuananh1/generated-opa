@@ -31,3 +31,7 @@ userset_gadfgfd_any_of_0 {
 userset_gadfgfd_any_of_0 {
 	count({x | some x in attributes.user.roleAssignments} - {x | some x in attributes.user.roles}) == 0
 }
+
+userset_gadfgfd_any_of_0 {
+	count({x | some x in attributes.user.friends} & {x | some x in attributes.user.roles}) > 0
+}
