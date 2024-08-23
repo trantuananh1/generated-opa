@@ -18,6 +18,7 @@ userset_gadfgfd_any_of_0 {
 
 userset_gadfgfd_any_of_0 {
 	attributes.user.roles == attributes.user.friends
+	contains(attributes.user.key, attributes.user.key)
 }
 
 userset_gadfgfd_any_of_0 {
