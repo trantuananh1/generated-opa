@@ -15,4 +15,6 @@ userset_testabc {
 
 	attributes.user.introduction.name == "Tuan"
 	attributes.user.introduction.location == "HN"
+	attributes.user.key in attributes.user.roles
+	"admin" in attributes.user.roles
 }
