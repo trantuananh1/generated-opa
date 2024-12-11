@@ -12,4 +12,7 @@ userset_testabc {
 	every array_item in attributes.user.comments {
 		array_item.name == "Tuan"
 	}
+
+	attributes.user.introduction.name == "Tuan"
+	attributes.user.introduction.location == "HN"
 }
