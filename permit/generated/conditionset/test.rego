@@ -12,4 +12,5 @@ userset_test {
 	attributes.tenant.name == "vbc"
 	role_attrs.name == "abc"
 	attributes.user.key in attributes.user.roles
+	contains(role_attrs.name, "admin")
 }
